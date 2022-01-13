@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gamescheduleamplify-dev-233018-authRole",
+      "UnauthRoleArn": "arn:aws:iam::774419310151:role/amplify-gamescheduleamplify-dev-233018-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::774419310151:role/amplify-gamescheduleamplify-dev-233018-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-gamescheduleamplify-dev-233018-deployment",
+      "UnauthRoleName": "amplify-gamescheduleamplify-dev-233018-unauthRole",
+      "StackName": "amplify-gamescheduleamplify-dev-233018",
+      "StackId": "arn:aws:cloudformation:eu-west-1:774419310151:stack/amplify-gamescheduleamplify-dev-233018/3af9ab80-73f7-11ec-b382-06c4c7d710f3",
+      "AmplifyAppId": "deoekr90diua2"
+    },
+    "categories": {
+      "auth": {
+        "gamescheduleamplify8bfea8b0": {}
+      },
+      "function": {
+        "lambdaCreateUser": {
+          "deploymentBucketName": "amplify-gamescheduleamplify-dev-233018-deployment",
+          "s3Key": "amplify-builds/lambdaCreateUser-55476875437933305054-build.zip"
+        }
+      }
+    }
+  }
+}

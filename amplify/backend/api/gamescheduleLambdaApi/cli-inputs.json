@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/createEvent": {
+      "name": "/createEvent",
+      "lambdaFunction": "lambdaCreateUser",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "gamescheduleGraphQL",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authgamescheduleamplify8bfea8b0",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

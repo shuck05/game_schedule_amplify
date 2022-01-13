@@ -1,0 +1,66 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+
+type Event
+  @model
+  @auth(
+    rules: [
+      { allow: owner }
+      { allow: private, operations: [create, update, delete, read] }
+      { allow: public, operations: [create, read] }
+    ]
+  ) {
+  id: ID!
+  name: String!
+  Teams: [Team] @hasMany
+  Games: [Game] @hasMany
+  Users: [String]
+}
+
+type Game
+  @model
+  @auth(
+    rules: [
+      { allow: owner }
+      { allow: private, operations: [create, update, delete, read] }
+      { allow: public, operations: [create, read] }
+    ]
+  ) {
+  id: ID!
+  ev: Event @belongsTo
+  team1: String!
+  team2: String!
+  scoreT1: Int!
+  scoreT2: Int!
+  done: Boolean
+}
+
+type Team
+  @model
+  @auth(
+    rules: [
+      { allow: owner }
+      { allow: private, operations: [create, update, delete, read] }
+      { allow: public, operations: [create, read] }
+    ]
+  ) {
+  id: ID!
+  name: String!
+  score: Int!
+  playedGames: Int!
+  dif: Int!
+  ev: Event @belongsTo
+}
+
+type User
+  @model
+  @auth(
+    rules: [
+      { allow: owner }
+      { allow: private, operations: [create, update, delete, read] }
+      { allow: public, operations: [create, update, read] }
+    ]
+  ) {
+  email: String! @primaryKey
+  events: [String]
+}

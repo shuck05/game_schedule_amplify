@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "gamescheduleGraphQL",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\Sebas\\OneDrive\\.Programmieren\\React\\game_schedule_amplify\\amplify\\backend\\api\\gamescheduleGraphQL\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authgamescheduleamplify8bfea8b0"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 365,
+        "apiKeyExpirationDate": "2023-01-12T22:55:31.845Z",
+        "keyDescription": "StandardApiKey"
+      }
+    ]
+  }
+}
