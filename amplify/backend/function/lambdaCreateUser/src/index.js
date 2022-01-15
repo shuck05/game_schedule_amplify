@@ -1,10 +1,14 @@
-const axios = require("axios");
+/* Amplify Params - DO NOT EDIT
+	API_GAMESCHEDULEGRAPHQL_GRAPHQLAPIENDPOINTOUTPUT
+	API_GAMESCHEDULEGRAPHQL_GRAPHQLAPIIDOUTPUT
+	API_GAMESCHEDULEGRAPHQL_GRAPHQLAPIKEYOUTPUT
+	ENV
+	REGION
+Amplify Params - DO NOT EDIT */const axios = require("axios");
 const gql = require("graphql-tag");
 const graphql = require("graphql");
 const { print } = graphql;
-
 const urlParse = require("url").URL; // const appsyncUrl = process.env.API_gamescheduleGraphQL_GRAPHQLAPIENDPOINTOUTPUT;
-const { ConsoleLogger } = require("@aws-amplify/core");
 const appsyncUrl =
   "https://ylf4hnrtrbbspkdwufxhfdtdeu.appsync-api.eu-west-1.amazonaws.com/graphql";
 const region = process.env.REGION;
@@ -75,9 +79,10 @@ const updateUser = gql`
   }
 `;
 
-//exports.handler = async (event) => {
-async function lambdaFunc() {
-  //const data = JSON.parse(event.body);
+exports.handler = async (event) => {
+  //async function lambdaFunc() {
+  const data = JSON.parse(event.body);
+  /*
   const data = {
     name: "Volleyball",
     Users: ["basti-huck@t-online.de"],
@@ -87,6 +92,7 @@ async function lambdaFunc() {
       { team1: "Team3", team2: "Team1" },
     ],
   };
+  */
   const API_Data = {
     appsyncUrl: appsyncUrl,
     region: region,
@@ -235,7 +241,9 @@ async function lambdaFunc() {
       "Access-Control-Allow-Headers": "*",
     },
   };
-}
+};
+/*
 console.log("Start");
 lambdaFunc();
 console.log("End");
+*/

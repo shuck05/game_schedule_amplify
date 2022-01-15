@@ -5,7 +5,12 @@
       "name": "/createEvent",
       "lambdaFunction": "lambdaCreateUser",
       "permissions": {
-        "setting": "open"
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
       }
     }
   }

@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-gamescheduleamplify-dev-233018-unauthRole",
       "StackName": "amplify-gamescheduleamplify-dev-233018",
       "StackId": "arn:aws:cloudformation:eu-west-1:774419310151:stack/amplify-gamescheduleamplify-dev-233018/3af9ab80-73f7-11ec-b382-06c4c7d710f3",
-      "AmplifyAppId": "deoekr90diua2"
+      "AmplifyAppId": "deoekr90diua2",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-gamescheduleamplify-dev-233018-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
@@ -18,7 +19,7 @@
       "function": {
         "lambdaCreateUser": {
           "deploymentBucketName": "amplify-gamescheduleamplify-dev-233018-deployment",
-          "s3Key": "amplify-builds/lambdaCreateUser-55476875437933305054-build.zip"
+          "s3Key": "amplify-builds/lambdaCreateUser-5943555a354b65497762-build.zip"
         }
       }
     }
